@@ -9,11 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var textField1: UITextField!
+    @IBOutlet weak var textField2: UITextField!
+    @IBOutlet weak var compatibilityLabel: UILabel!
+    @IBOutlet weak var summaryTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func calculateButtonTapped(_ sender: UIButton) {
+        
+    }
 }
 

@@ -56,6 +56,9 @@
                                 <state key="normal" title="Calculate">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VLk-4O-5KH"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="byi-B5-xjL">
                                 <rect key="frame" x="75" y="374" width="225" height="128"/>
@@ -101,6 +104,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="compatibilityLabel" destination="Mw5-qY-b2J" id="KPR-IT-1rD"/>
+                        <outlet property="summaryTextView" destination="byi-B5-xjL" id="lyc-N6-QLq"/>
+                        <outlet property="textField1" destination="i2U-Rk-UCP" id="g75-hH-1gK"/>
+                        <outlet property="textField2" destination="sVa-yq-efZ" id="5Ng-4x-e6H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
