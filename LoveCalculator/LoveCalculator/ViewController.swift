@@ -14,10 +14,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
    var audioPlayer: AVAudioPlayer!
     
     //IB - Outlets
+    @IBOutlet weak var summaryLabel: UILabel!
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textField2: UITextField!
     @IBOutlet weak var compatibilityLabel: UILabel!
-    @IBOutlet weak var summaryTextView: UITextView!
     
     let soundFiles = ["uh", "happy"]
     
@@ -50,9 +50,14 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         if lovePercent < 80 {
             
             playSound(fileToPlay: soundFiles[0])
+            
+            summaryLabel.text = "A successful relationship is possible, but you both have to work on it. Do not sit back and think that it will all work out fine, because it might not be working out the way you wanted it to. Spend as much time with each other as possible. Again, the chance of this relationship working out is very small, so even when you do work hard on it, it still might not work out."
+            
         } else {
             
             playSound(fileToPlay: soundFiles[1])
+            
+            summaryLabel.text = "very good chance of being successful, but this doesn't mean that you don't have to work on the relationship. Remember that every relationship needs spending time together, talking with each other etc."
         }
         
     }
